@@ -1,0 +1,17 @@
+/* Structural Style */
+body {
+    background-color: navajowhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div {
+    background-color: rgb(219, 203, 187);
+    padding: 3px;
+    margin: 30px auto;
+    width: 85%;
+}
+h1 {
+    color:firebrick;
+}
+p {
+    color:cornflowerblue;
+}

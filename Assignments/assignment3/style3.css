@@ -1,0 +1,42 @@
+/*Assignment 3 CSS, Utkarsh Kotadiya*/
+
+/* Structure */
+
+body{
+    background-color: khaki;
+    background: url(cheese.jpg);
+}
+
+.title {
+    text-align: center;
+}
+
+#main {
+    background-color: blanchedalmond;
+    margin: 100px;
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 9px;
+    border-style: ridge;
+    border-width: 10px;
+}
+
+#nav {
+    background-color: beige;
+    list-style-type: none;
+    padding: 8px;
+}
+
+#nav li a {
+    text-decoration: none;
+    color:darkgoldenrod;
+}
+
+#nav li a:hover {
+    text-decoration: underline;
+    color: brown;
+}
+
+img {
+    padding: 30px;
+}
