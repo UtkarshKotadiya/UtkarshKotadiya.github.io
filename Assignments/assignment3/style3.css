@@ -1,0 +1,111 @@
+/*Assignment 3 CSS - Utkarsh Kotadiya*/
+
+/* Sturcture */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content {
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+#header {
+    text-align: center;
+    border-radius: 8px;
+    color: lightslategrey;
+}
+
+img {
+    max-width: 100%;
+}
+
+#top-div {
+    padding: 15px;
+
+}
+
+#top-section {
+    background-color: lightslategrey;
+    color: blanchedalmond;
+    font-size: medium;
+    text-align: center;
+    padding: 5px;
+    width: 85%;
+}
+
+#top-section p {
+    font-size: small;
+    padding: 10px;
+}
+
+#asidee {
+    background-color: indianred;
+    width: auto;
+    padding: 10px;
+    color: blanchedalmond;
+}
+
+#asidee a {
+    color: blanchedalmond;
+    display: list-item;
+    list-style: none;
+}
+
+#bottom-div {
+    padding: 10px;
+    color: lightslategrey;
+}
+
+article {
+    padding: 5px;
+}
+
+#xyz {
+    gap: 12px;
+    padding: 5px;
+}
+
+footer p {
+    text-align: center;
+    background: none;
+    color: lightslategrey;
+
+}
+
+
+/* Navigation */
+#nav ul {
+    padding-left: 0;
+}
+
+#nav ul li {
+    list-style: none;
+    background-color:indianred;
+    border-style: groove;
+}
+
+#nav a {
+    text-decoration: none;
+    color: azure;
+    display:inline-block;
+    padding: 10px;
+}
+
+
+
+
+/* Media Queries */
+@media only screen and (min-width:600px) {
+    .column{
+        display:flex;
+    }
+    
+    .one {
+        flex:1;
+    }
+    #nav li {
+        flex: 1;
+    }
+}
