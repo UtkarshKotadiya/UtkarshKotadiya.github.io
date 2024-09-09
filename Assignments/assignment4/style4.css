@@ -1,0 +1,439 @@
+/* Assignment 4 CSS, Utkarsh Kotadiya*/
+
+/* Structure */
+
+:root {
+    --dark-garnet: rgb(87, 0, 8);
+    --garnet: rgb(115, 0, 10);
+    --black-text: rgb(34,34,34);
+    --black: rgb(0,0,0);
+    --white: rgb(255,255,255);
+    --grey: rgb(236,236,236);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#sec-2 {
+    background-color: var(--white);
+    padding: 20px;
+}
+
+#sec-2-head {
+    color: var(--garnet);
+    font-size: 250%;
+    text-transform: uppercase;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#sec-2-para {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    text-align: left;
+    color: var(--black-text);
+}
+
+#sec-2-words {
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    text-align: left;
+    color: var(--black-text);
+}
+
+#sec-3 {
+    background-color: var(--garnet);
+    padding: 4%;
+    color: var(--white);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sec-3 h2 {
+    font-size: xx-large;
+}
+#sec-3 p {
+    font-size: medium;
+}
+#sec-3-text {
+    width: 80%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#sec-3-text button {
+    background-color: var(--black);
+    border: solid 1px var(--white);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+    font-size: x-large;
+}
+#sec-3-text a {
+    text-decoration: none;
+    color: var(--white);
+}
+#sec-3-text button:hover {
+    background-color: var(--white);
+    border: none;
+}
+#sec-3-text button:hover a {
+    background-color: var(--white);
+    color: var(--garnet);
+}
+
+#sec-4 {
+    background-color: var(--grey);
+    padding: 10%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sec-4 h1 {
+    color: var(--garnet);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 260%;
+}
+#sec-4 p {
+    font-size: medium;
+    line-height: 200%;
+}
+#sec-4 button {
+    background-color: var(--garnet);
+    color: var(--white);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    padding: 2%;
+    border: none;
+}
+#sec-4 button a {
+    text-decoration: none;
+    color: var(--white);
+}
+#sec-4 button:hover a {
+    color: var(--garnet);
+}
+#sec-4 button:hover {
+    border: solid 2px var(--garnet);
+    background-color: var(--white);
+}
+
+#sec-5 {
+    background-color: var(--white);
+    text-align: center;
+    padding: 12%;
+}
+#sec-5 h1 {
+    color: var(--garnet);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 340%;
+}
+#sec-5 p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 200%;
+    font-size: medium;
+}
+#sec-5-stuff {
+    background-color: var(--white);
+}
+.boxes {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.boxes:hover {
+    box-shadow: 0 5px 10px var(--black);
+    cursor: pointer;
+}
+.boxes img {
+    width: 100%;
+}
+.boxes-text {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+}
+.boxes-text h2 {
+    color: var(--garnet);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+#sec-6 {
+    background-color: var(--black);
+    padding: 4%;
+    color: var(--white);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sec-6-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sec-6 h2 {
+    font-size: xx-large;
+}
+#sec-6 p {
+    font-size: medium;
+    line-height: 150%;
+}
+#sec-6-text {
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#sec-6-text button {
+    background-color: var(--garnet);
+    border: solid 1px var(--white);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+    font-size: x-large;
+}
+#sec-6-text a {
+    text-decoration: none;
+    color: var(--white);
+}
+#sec-6-text button:hover {
+    background-color: var(--white);
+    border: solid 1px var(--garnet);
+}
+#sec-6-text button:hover a {
+    background-color: var(--white);
+    color: var(--garnet);
+}
+
+
+
+
+/* Header */
+
+#main-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#top-bar {
+    color: white;
+    background-color: var(--black);
+    font-size: x-small;
+    padding: 0.5%;
+}
+
+h4 {
+    padding: 4px;
+    font-weight: lighter;
+}
+
+#top-heading {
+    font-weight: bolder;
+}
+#top-bar a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#header-div {
+    background-color: var(--black);
+    padding: 2%;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    background: none;
+    border: 1.5px solid white;
+    padding: 10px;
+    outline: none;
+}
+
+#menu-div {
+    background-color: var(--garnet);
+}
+
+#menu-div ul {
+    background-color: var(--garnet);
+    gap: 0;
+    margin-top: 0;
+    padding: 1%;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+#menu-div li {
+    list-style: none;
+    text-align: center;
+}
+#menu-div li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#menu-div li:hover {
+    background-color: var(--dark-garnet);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--garnet);
+}
+#foot-div-1 {
+    padding: 3%;
+}
+#footer-text {
+    color: var(--white);
+}
+#footer-text h3 {
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#footer-text li a {
+    font-size: 15px;
+}
+#foot-sec-3 li {
+    list-style: none;
+}
+#foot-sec-2 li {
+    list-style: none;
+}
+#foot-sec-1 li {
+    list-style: none;
+}
+#foot-sec-3 li a {
+    text-decoration: none;
+    color: var(--white);
+}
+#foot-sec-2 li a {
+    text-decoration: none;
+    color: var(--white);
+}
+#foot-sec-1 li a {
+    text-decoration: none;
+    color: var(--white);
+}
+#foot-div-2 {
+    background-color: var(--black);
+    display:flex;
+    padding: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;    
+}
+#foot-div-2 a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width:600px) {
+    .columns {
+        display: flex;
+    }
+    #top-bar {
+        text-align: right;
+        padding-left: 50%;
+    }
+    #main-header {
+        margin: 0;
+        padding: 0;
+    }
+    #header-div {
+        justify-content: space-between;
+    }
+    #sec-2-head {
+        background-color: var(--garnet);
+        color: var(--white);
+        width: fit-content;
+        height: fit-content;
+        font-size: 200%;
+        text-transform: uppercase;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        top: 940px;
+        left: 100px;
+    }
+    #sec-2-para {
+        width: 65%;
+        margin-top: 80px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    #sec-2-words {
+        width: 65%;
+        margin-top: 30px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    #sec-3 {
+        padding: 0;
+    }
+    #sec-3 img {
+        height: 100%;
+    }
+    #sec-3-text {
+        padding: 50px;
+        width: 60%;
+        align-content: center;
+    }
+    #sec-4 {
+        padding: 5%;
+    }
+    #sec-5 {
+        padding: 5%;
+    }
+    #sec-5-stuff {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .boxes {
+        margin: 1.5%;
+        padding: 0;
+    }
+    .boxes-text {
+        padding: 2%;
+    }
+    #sec-6 {
+        padding-left: 50px;
+        padding-right: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #sec-6 img {
+        height: 100%;
+    }
+    #sec-6-text {
+        padding: 50px;
+        width: 60%;
+        align-content: center;
+    }
+    #main-foot-div {
+        padding: 1%;
+    }
+    #foot-sec-1 {
+        padding-right: 2%;
+    }
+    #foot-sec-2 {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #foot-sec-3 {
+        padding-left: 2%;
+    }
+    #top-footer {
+        justify-content: space-between;
+    }
+}

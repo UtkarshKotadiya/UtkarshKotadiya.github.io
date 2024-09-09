@@ -1,0 +1,70 @@
+/* Excercise 4 CSS*/
+
+/* Structure */
+
+body {
+    background-color:linen;
+
+}
+
+#content {
+    background-color: powderblue;
+}
+
+#main-header {
+    position: relative;
+}
+
+.columns-all {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+}
+
+#login-menu ul {
+    display: none;
+    padding-left: 0;
+
+}
+
+#login-menu li {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Login Menu*/
+#login-menu {
+    background-color: burlywood;
+    width:fit-content;
+    padding: 10px;
+    position: absolute;
+    top: 8%;
+    right: 2%;
+
+}
+
+
+
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width:600px) {
+    #content {
+        width: 60%;
+        margin: auto;
+    }
+    .columns {
+        display: flex;
+    }
+    #login-menu ul {
+        display: flex;
+    }
+}

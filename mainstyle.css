@@ -12,6 +12,10 @@ header {
     color: teal;
 }
 
+h3 {
+    text-align: center;
+    color: teal;
+}
 #main-div {
     background-color:azure;
     margin: 40px;
