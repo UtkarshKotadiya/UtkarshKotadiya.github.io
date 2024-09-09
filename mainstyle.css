@@ -7,15 +7,17 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
+header h1 {
+    text-align: center;
+    color: teal;
+    font-size: 300%;
+}
+
+h1 {
     text-align: center;
     color: teal;
 }
 
-h3 {
-    text-align: center;
-    color: teal;
-}
 #main-div {
     background-color:azure;
     margin: 40px;
