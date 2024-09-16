@@ -1,0 +1,117 @@
+/* Assignment 5 CSS, Utkarsh Kotadiya */
+
+/* Structure */
+
+:root {
+    --box-background: #E9F7CA;
+    --white: rgb(255,255,255);
+    --black: rgb(0,0,0,);
+    --body-background: #EAEFB1;
+    --text-color: #AD5D4E;
+    --box-1-col: #EB6534;
+    --slide-box: rgb(100,149,258);
+}
+
+body {
+    background-color: var(--body-background);
+}
+
+#main-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    margin: 30px;
+    background-color: var(--box-background);
+}
+
+#main-div {
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#counter-num {
+    font-size: 500%;
+    text-align: center;
+}
+
+#box-1{
+    color: var(--box-1-col);
+}
+
+#box-2 {
+    text-align: center;
+    color: var(--text-color);
+    border-style: groove;
+}
+
+#box-3{
+    color: var(--text-color);
+    border-style: groove;
+    height: 350px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#box-3 h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#slider {
+    width: 100%;
+    align-self: center;
+}
+
+#slide-box {
+    position: absolute;
+    background-color: var(--slide-box);
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    left: 20px;
+}
+
+
+
+/* Header */
+
+header {
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Media Queries */
+
+@media only screen and (min-width:600px) {
+    .column {
+        display:flex;
+    }
+    #box-1 {
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-bottom: 90px;
+        margin: 30px;
+    }
+    #box-2 {
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-bottom: 90px;
+        margin: 30px;
+    }
+}

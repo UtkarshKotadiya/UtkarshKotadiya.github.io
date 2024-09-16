@@ -1,0 +1,185 @@
+/* Project Site CSS, Utkarsh Kotadiya */
+
+/* Structure */
+
+:root {
+    --black: rgb(0,0,0);
+    --beige: rgb(245,245,220);
+    --white: rgb(255,255,255);
+}
+
+#home-page-img {
+    text-align: center;
+}
+#home-page-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#home-page-content h1 {
+    text-align: center;
+}
+#ft-imgs img {
+    margin: 2%;
+}
+
+#au-hist {
+    padding: 2%;
+}
+#au-ppl-div {
+    padding: 2%;
+}
+#au-ppl {
+    text-align: center;
+}
+
+
+#main-prod-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cont-top-div {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+}
+#cont-form-div {
+    text-align: center;
+}
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+textarea {
+    height: 100px;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    color: var(--blackb);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction:row;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
+}
+.filter-dropdown {
+    margin-bottom: 15px;
+}
+.filter-dropdown label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    background-color: var(--white);
+    font-size: 14px;
+}
+select:focus {
+    outline: none;
+    border-color: var(--beige);
+}
+
+
+/* Header */
+header {
+    width: 100%;
+    background-color: var(--beige);
+}
+header h1 {
+    font-size: 250%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#header-logo {
+    text-align: center;
+}
+#header-title {
+    text-align: center;
+}
+
+#header-div {
+    justify-content: space-between;
+    padding: 3%;
+}
+
+#menu-div ul {
+    gap: 0;
+    margin-top: 0;
+    padding: 1%;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+#menu-div li {
+    list-style: none;
+    text-align: center;
+}
+#menu-div li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+
+
+
+
+/* Footer */
+
+
+/* Media Queries */
+@media only screen and (min-width:600px) {
+    .columns {
+        display: flex;
+    }
+    #ft-imgs {
+        justify-content: center;
+    }
+    #au-top-img {
+        padding: 3%;
+    }
+    #au-top-text {
+        padding: 3%;
+    }
+    #au-ppl section {
+        justify-content: center;
+        margin: 2%;
+    }
+    #main-prod-content section {
+        margin: 2%;
+    }
+    #main-prod-content h1 {
+        margin: 2%;
+        text-align: center;
+    }
+    #cont-top-div {
+        padding: 2%;
+    }
+    #top-section section {
+        padding: 2%;
+        text-align: center;
+    }
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

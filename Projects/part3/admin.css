@@ -1,0 +1,51 @@
+/* Admin Page CSS, Utkarsh Kotadiya*/
+
+:root {
+    --color1: #fff;
+    --color2: #ccc;
+    --color3: #f9f9f9;
+    --color4: #4CAF50;
+}
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color1);
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+  }
+
+  .form-container h2 {
+    text-align: center;
+  }
+
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+
+  input[type="text"], input[type="number"], select, textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid color2;
+    border-radius: 5px;
+    background-color: var(--color3);
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--color4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--color4);
+  }
