@@ -1,0 +1,136 @@
+/* Assignment 6 CSS, Utkarsh Kotadiya */
+
+/* Structure */
+
+:root {
+    --main-background: #ECEBE4;
+    --text-color: #4E878C;
+    --text2: #65532F;
+    --background2: #D1EFB5;
+    --background3: #EDEBA0;
+    --white: rgb(255,255,255);
+    --grey: #444;
+    --black: rgb(0,0,0);
+}
+
+body {
+    background-color: var(--main-background);
+    color: var(--text-color);
+}
+#main-content {
+    padding: 1%;
+}
+
+#main-div {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#menu-toggle{
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-size: larger;
+}
+#menu-toggle:hover {
+    cursor: pointer;
+}
+#link-list {
+    list-style: none;
+    text-align: left;
+    margin-left: -3%;
+}
+#link-list li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+#pipe{
+    display: none;
+}
+.hidden {
+    display: none;
+}
+
+.picture-chooser {
+    border: 2px solid var(--text2);
+    padding: 2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--background3);
+}
+#image-container img {
+    margin-top: 1%;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+.color-slider-container {
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;    
+}
+input[type="range"] {
+    width: 60%;
+    cursor: pointer;
+    outline: none;
+    width: 80%;
+    height: 15px;
+    border-radius: 0;
+    appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--grey);
+    border: 2px solid var(--black);
+    border-radius: 2px;
+}
+
+
+
+/* Header */
+
+header {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header h1 {
+    font-size: 300%;
+}
+header h3 {
+    color: var(--text2);
+    font-size: x-large;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: var(--background2);
+    padding: 0.25%;
+    margin: 5%;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width:600px) {
+    #menu-toggle {
+        display: none;
+    }
+    #link-list {
+        display: flex;
+        justify-content: center;
+    }
+    #pipe {
+        display: flex;
+    }
+}
