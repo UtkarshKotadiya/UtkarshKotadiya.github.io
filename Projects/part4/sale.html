@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <!-- Written by Utkarsh Kotadiya -->
+        <title> Sale </title>
+        <link rel="stylesheet" href="projstyles.css">      
+    </head>
+
+    <body>
+
+        <header>
+
+            <div id="header-div" class="columns">
+                <div id="header-logo">
+                    <a href="home.html"> <img src="proj_imgs/top-logo.jpg" width="500" height="200"> </a>
+                </div>
+                
+                <div id="top-left-menu">
+                    <img src="proj_imgs/login_logo.jpg" height="50" width="50">
+                    <img src="proj_imgs/cart.jpg" height="50" width="50">
+                </div>
+            </div>
+
+            <div id="menu-div">
+                <nav id="main-nav">
+                    <div id="menu-toggle">&#x2630;</div>
+                    <ul id="home-nav" class="hidden">
+                        <li> <a href="home.html"> HOME </a> </li>
+                        <li> <a href="about.html"> ABOUT US </a> </li>
+                        <li> <a href="products.html"> PRODUCTS </a> </li>
+                        <li> <a href="sale.html"> SALE </a> </li>
+                        <li> <a href="contact.html"> CONTACT </a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <div id="main-sale-content">
+
+            <div class="columns" id="sale-div">
+
+                <aside id="drop-down-sale">
+                    <div class="filter-container">
+
+                        <div class="filter-dropdown">
+                          <label for="product-type">Product Type</label>
+                          <select id="product-type" name="product-type">
+                            <option value="">Select Product Type</option>
+                            <option value="ring">Ring</option>
+                            <option value="necklace">Necklace</option>
+                            <option value="bracelet">Bracelet</option>
+                            <option value="earrings">Earrings</option>
+                            <option value="watches">Watches</option>
+                            <option value="pendants">Pendants</option>
+                          </select>
+                        </div>
+                      
+                        <div class="filter-dropdown">
+                          <label for="metal">Metal</label>
+                          <select id="metal" name="metal">
+                            <option value="">Select Metal</option>
+                            <option value="gold">Gold</option>
+                            <option value="silver">Silver</option>
+                            <option value="platinum">Platinum</option>
+                            <option value="rose-gold">Rose Gold</option>
+                            <option value="diamonds">Diamond</option>
+                          </select>
+                        </div>
+                      
+                        <div class="filter-dropdown">
+                          <label for="karat">Karat</label>
+                          <select id="karat" name="karat">
+                            <option value="">Select Karat</option>
+                            <option value="24k">24K</option>
+                            <option value="18k">18K</option>
+                            <option value="14k">14K</option>
+                            <option value="10k">10K</option>
+                          </select>
+                        </div>
+                      
+                        <div class="filter-dropdown">
+                          <label for="color">Color</label>
+                          <select id="color" name="color">
+                            <option value="">Select Color</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="white">White</option>
+                            <option value="rose">Rose</option>
+                            <option value="green">Green</option>
+                          </select>
+                        </div>
+                      </div>
+
+
+                </aside> 
+
+                <section id="top-section">
+                    <div class="columns" id="sale-products">
+                        <section>
+                            <img src="proj_imgs/pendant-heart.jpg">
+                            <h5> Heart Pendant (Gold) </h5>
+                        </section>                   
+                        <section>
+                            <img src="proj_imgs/pendant-cross.jpg">
+                            <h5> Cross Pendant </h5>
+                        </section>                   
+                        <section>
+                            <img src="proj_imgs/pendant-LS.jpg">
+                            <h5> Last Supper Pendant </h5>
+                        </section>                   
+                        <section>
+                            <img src="proj_imgs/pendant-W.jpg">
+                            <h5> World Pendant </h5>
+                        </section>                   
+                    </div>
+                    
+                </section>                
+
+            </div>
+
+        </div>
+
+        <script src="projscript.js"></script>
+        
+    </body>
+
+
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <!-- Written by Utkarsh Kotadiya -->
+        <title> About Us </title>
+        <link rel="stylesheet" href="projstyles.css">      
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div id="header-div" class="columns">
+                <div id="header-logo">
+                    <a href="home.html"> <img src="proj_imgs/top-logo.jpg" width="500" height="200"> </a>
+                </div>
+
+                
+                
+                <div id="top-left-menu">
+                    <img src="proj_imgs/login_logo.jpg" height="50" width="50">
+                    <img src="proj_imgs/cart.jpg" height="50" width="50">
+                </div>
+            </div>
+
+            <div id="menu-div">
+                <nav id="main-nav">
+                    <div id="menu-toggle">&#x2630;</div>
+                    <ul id="home-nav" class="hidden">
+                        <li> <a href="home.html"> HOME </a> </li>
+                        <li> <a href="about.html"> ABOUT US </a> </li>
+                        <li> <a href="products.html"> PRODUCTS </a> </li>
+                        <li> <a href="sale.html"> SALE </a> </li>
+                        <li> <a href="contact.html"> CONTACT </a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <div id="au-contact-content">
+
+            <div class="columns" id="cont-top-div"> 
+                <section id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d105607.17502895597!2d-79.90612057983671!3d34.19174710000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8855641d897174dd%3A0x78d0b0d27b43a383!2sParamount%20Jewelers!5e0!3m2!1sen!2sus!4v1727063206306!5m2!1sen!2sus"
+                        width="600" height="450" style="border:0;" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
+                <section id="au-top-text">
+                    <h1> Our Location </h1>
+                    <h4> 2701 David H Mcleod Blvd </h4>
+                    <h4> Florence, SC - 29501 </h4>
+                </section>
+            </div>
+
+            <div id="cont-form-div">
+                <h1> Contact Us </h1>
+                <div class="form-container">
+                    <form>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" placeholder="Your name..." required>
+                  
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" placeholder="Your email..." required>
+                  
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" placeholder="Message..." required></textarea>
+                  
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+            </div>
+
+        </div>
+
+        <script src="projscript.js"></script>
+       
+    </body>
+
+
+
+</html>

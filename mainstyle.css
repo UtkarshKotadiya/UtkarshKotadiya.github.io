@@ -20,10 +20,10 @@ h1 {
 
 #main-div {
     background-color:azure;
-    margin: 40px;
+    margin: 20px;
     border-style:solid; 
     border-width: 1px;
-    padding: 12px;
+    padding: 1%;
 }
 
 img {
@@ -32,8 +32,8 @@ img {
 
 .as-boxes {
     background-color:lightblue;
-    padding: 10px;
-    margin: 15px;
+    padding: 2%;
+    margin: 3%;
     text-align: center;
 }
 
@@ -57,5 +57,11 @@ footer {
     .column {
         display: flex;
     }
-
+    #main-div {
+        margin: 30px;
+    }
+    .as-boxes {
+        padding: 1%;
+        margin: 1%;
+    }
 }
