@@ -52,6 +52,7 @@
 }
 #ring-products, #necklace-products, #watch-products, #sale-products {
     text-align: center;
+    flex-wrap: wrap;
 }
 #ring-products img {
     width: 250px;
