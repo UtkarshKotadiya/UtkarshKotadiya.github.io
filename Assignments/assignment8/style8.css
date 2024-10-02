@@ -1,0 +1,67 @@
+/* Assignment 8 CSS, Utkarsh Kotadiya */
+
+:root {
+    --background1: #FAF3DD;
+    --background2: #AED9E0;
+    --background3: #f8f8f8;
+    --text1: #007BFF;
+    --text2: #e0e0e0;
+    --black: #333;
+    --white: #ddd;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: var(--background2);
+}
+#image-section {
+    margin: 20px auto;
+    width: 40%;
+    padding: 2%;
+    background-color: var(--background1);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--text2);
+}
+#description {
+    margin-bottom: 1%;
+    color: var(--black);
+    padding: 10px;
+    background-color: var(--background3);
+    border-radius: 5px;
+    border: 1px solid var(--white);
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.image-container img {
+    width: 30%;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent var(--text1);
+}
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--text1);
+}
+#credits {
+    background-color: var(--background3);
+    font-size: x-small;
+    text-align: left;
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+}
+a {
+    text-decoration: none;
+    color: var(--text1);
+}
+footer {
+    margin-bottom: 4%;
+}

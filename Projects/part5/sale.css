@@ -1,0 +1,150 @@
+/* Sale Page CSS, Utkarsh Kotadiya */
+
+/* #sale-products{
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#sale-products img {
+    width: 200px;
+    height: 200px;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction:row;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
+}
+.filter-dropdown {
+    margin-bottom: 15px;
+}
+.filter-dropdown label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    background-color: var(--white);
+    font-size: 14px;
+}
+select:focus {
+    outline: none;
+    border-color: var(--beige);
+} */
+
+
+
+
+
+#main-sale-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    margin: 5%;
+}
+
+h1, h2 {
+    font-size: 200%;
+    color: #8a6d3b;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h5 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.sale-stuff {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-dropdown {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#sale-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+#sale-products section {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sale-products section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#sale-products img {
+    width: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+@media only screen and (min-width:600px) {
+    .sale-stuff {
+        grid-template-columns: 1fr 3fr;
+    }
+    aside {
+        width: 50%;
+        margin: 2%;
+    }
+    h1, h2 {
+        font-size: 250%;
+    }
+    .filter-container {
+        flex-direction: column;
+    }
+    #sale-products img {
+        width: 100%;
+    }
+}

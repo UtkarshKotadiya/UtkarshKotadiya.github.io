@@ -1,0 +1,142 @@
+/* About Page CSS, Utkarsh Kotadiya */
+
+:root {
+    --main-text: #8a6d3b;
+    --text-color1: #333;
+    --white: rgb(255,255,255);
+    --background1: #7a5b29;
+}
+
+
+#au-main-content {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#au-hist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5%;
+    gap: 20px;
+}
+
+#au-top-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+#au-top-text {
+    flex: 1;
+    text-align: center;
+}
+
+#au-top-text h2 {
+    font-size: 200%;
+    color: var(--main-text);
+    margin-bottom: 15px;
+}
+
+#au-top-text p {
+    line-height: 2;
+    font-size: 100%;
+}
+
+#au-ppl-div {
+    margin-bottom: 3%;
+    margin-top: 6%;
+}
+
+#au-ppl-div h1 {
+    font-size: 300%;
+    text-align: center;
+    color: var(--main-text);
+    margin-bottom: 1%;
+}
+
+#au-ppl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6%;
+    gap: 50px;
+}
+
+#au-ppl section {
+    text-align: center;
+}
+
+#au-ppl img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#au-ppl img:hover {
+    transform: scale(1.05);
+}
+
+#au-ppl h3 {
+    margin-top: 15px;
+    font-size: 150%;
+    color: var(--text-color1);
+}
+
+
+/* Button styling */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: var(--main-text);
+    color: var(--white);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--background1);
+}
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width:600px) {
+    #au-hist {
+        margin: 1%;
+        flex-direction: row;
+        align-items:center;
+    }
+    #au-top-img {
+        padding: 1%;
+    }
+    #au-top-img img {
+        max-width: 700px;
+        object-fit: cover;
+
+    }
+    #au-top-text {
+        padding: 2%;
+    }
+    #au-ppl {
+        justify-content: center;
+        margin: 3%;
+        flex-direction: row;
+    }
+}

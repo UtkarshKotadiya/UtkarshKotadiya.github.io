@@ -1,0 +1,91 @@
+/* Assignment 7 CSS, Utkarsh Kotadiya */
+
+:root {
+    --main-background: #DFE0DC;
+    --text-color: #351431;
+    --text2: #946366;
+    --error-text: #d10812;
+    --background2: #BDC696;
+    --background3: #404E7C;
+    --white: rgb(255,255,255);
+    --grey: #444;
+    --black: rgb(0,0,0);
+    --gold: #ffd700;
+}
+
+body {
+    background-color: var(--main-background);
+    color: var(--text-color);
+}
+#main-content {
+    padding: 1%;
+    text-align: center;
+}
+
+#main-div {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background3);
+    padding: 2%;
+    max-width: 700px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#inputs {
+    margin: 1%;
+}
+#controls {
+    color: var(--white);
+}
+#message {
+    margin: 1%;
+    color: var(--text2);
+}
+#error {
+    margin: 1%;
+    color: var(--error-text);
+}
+#star-container {
+    width: 100%;
+    height: 200px;
+    background-color: var(--black);
+    border: 1px var(--white) solid;
+    position: relative;
+}
+.star {
+    color: var(--gold);
+    position: absolute;
+}
+
+
+/* Header */
+
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header h1 {
+    font-size: 300%;
+}
+header h3 {
+    color: var(--text2);
+    font-size: x-large;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 0.25%;
+    margin: 5%;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width:600px) {
+    .columns {
+        display: flex;
+    }
+}
