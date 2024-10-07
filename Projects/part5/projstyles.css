@@ -14,26 +14,6 @@ body {
     padding: 0;
 }
 
-/* #home-page-img {
-    text-align: center;
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-}
-#home-page-content {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-#home-page-content h1 {
-    text-align: center;
-}
-#ft-imgs {
-    text-align: center;
-}
-#ft-imgs img {
-    margin: 1%;
-} */
-
 #main-home-content {
     max-width: 1200px;
     margin: 40px auto;

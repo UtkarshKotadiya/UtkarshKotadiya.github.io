@@ -46,51 +46,7 @@
     font-size: 100%;
 }
 
-#au-ppl-div {
-    margin-bottom: 3%;
-    margin-top: 6%;
-}
 
-#au-ppl-div h1 {
-    font-size: 300%;
-    text-align: center;
-    color: var(--main-text);
-    margin-bottom: 1%;
-}
-
-#au-ppl {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 6%;
-    gap: 50px;
-}
-
-#au-ppl section {
-    text-align: center;
-}
-
-#au-ppl img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-#au-ppl img:hover {
-    transform: scale(1.05);
-}
-
-#au-ppl h3 {
-    margin-top: 15px;
-    font-size: 150%;
-    color: var(--text-color1);
-}
-
-
-/* Button styling */
 .cta-button {
     display: inline-block;
     margin-top: 20px;
@@ -112,6 +68,64 @@
 
 
 
+#au-ppl-div {
+    margin: 20px;
+}
+
+#au-ppl-div h1 {
+    font-size: 300%;
+    text-align: center;
+    color: var(--main-text);
+    margin-bottom: 1%;
+}
+
+#au-ppl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 2% auto;
+    max-width: 1000px;
+}
+
+#au-ppl section {
+    text-align: center;
+}
+
+.jeweler-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jeweler-info img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.bio {
+    text-align: left;
+    max-width: 600px;
+}
+
+.bio h3 {
+    font-size: 150%;
+    color: var(--text-color1);
+    margin-bottom: 10px;
+}
+
+.bio p {
+    font-size: 100%;
+    line-height: 1.6;
+    color: var(--text-color1);
+}
 
 
 
@@ -134,9 +148,17 @@
     #au-top-text {
         padding: 2%;
     }
-    #au-ppl {
-        justify-content: center;
-        margin: 3%;
+    .jeweler-info {
         flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .jeweler-info img {
+        width: 40%;
+        max-width: 200px;
+    }
+    .bio {
+        width: 60%;
     }
 }

@@ -1,26 +1,35 @@
 /* Main Page CSS, Utkarsh Kotadiya*/
 
+:root {
+    --main-background: #ECEBE4;
+    --white: rgb(255,255,255);
+    --div-background: #e0f7fa;
+    --titles: #333;
+    --titles2: #444;
+    --text1: #00796b;
+    --link-color: #004d40;
+}
+
 /*Structure*/
 
 body {
-    background-color: #f0f0f0;
+    background-color: var(--main-background);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #main-div {
-    background-color: white;
-    margin: 40px auto;
+    background-color: var(--white);
+    margin: 10px;
     border: 1px solid #ddd;
     padding: 2%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
 }
 
 #as-content, #proj-content {
     flex-wrap: wrap;
 }
 .as-boxes {
-    background-color: #e0f7fa;
+    background-color: var(--div-background);
     padding: 2%;
     margin: 2%;
     text-align: center;
@@ -37,13 +46,13 @@ body {
 
 .as-boxes a {
     text-decoration: none;
-    color: #00796b;
+    color: var(--text1);
     font-weight: bold;
 }
 
 .as-boxes a:hover {
     text-decoration: underline;
-    color: #004d40;
+    color: var(--link-color);
 }
 
 img {
@@ -56,13 +65,13 @@ img {
 
 header h1 {
     text-align: center;
-    color: #333;
+    color: var(--titles);
     font-size: 250%;
     font-weight: bold;
 }
 h1, h2 {
     text-align: center;
-    color: #444;
+    color: var(--titles2);
 }
 
 
@@ -71,8 +80,7 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 1rem;
-    color: #888;
-    border-top: 1px solid #ddd;
+    color: var(--titles2);
 }
 
 
@@ -83,7 +91,7 @@ footer {
         display: flex;
     }
     #main-div {
-        margin: 30px;
+        margin: 20px;
     }
     .as-boxes {
         padding: 1%;
