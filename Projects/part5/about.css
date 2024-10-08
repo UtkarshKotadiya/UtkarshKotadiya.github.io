@@ -53,18 +53,15 @@
     padding: 12px 20px;
     background-color: var(--main-text);
     color: var(--white);
-    font-size: 1.1em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
-
 .cta-button:hover {
     background-color: var(--background1);
 }
-
 
 
 

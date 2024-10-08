@@ -1,10 +1,17 @@
 /* Sale Page CSS, Utkarsh Kotadiya */
 
+:root {
+    --white: #fff;
+    --text1: #333;
+    --filter-back: #fdfdfd;
+}
+
 #main-sale-content {
     max-width: 1200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 40px auto;
     padding: 20px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -13,20 +20,14 @@ aside {
     margin: 5%;
 }
 
-h1, h2 {
-    font-size: 200%;
-    color: #8a6d3b;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 h5 {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 100%;
+    color: var(--text1);
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+    cursor: pointer;
 }
 
 .sale-stuff {
@@ -38,7 +39,7 @@ h5 {
 .filter-container {
     display: flex;
     flex-direction: row;
-    background-color: #fdfdfd;
+    background-color: var(--filter-back);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -59,7 +60,6 @@ select {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 1em;
 }
 
 #sale-products {
@@ -73,7 +73,6 @@ select {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 #sale-products section:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -82,8 +81,9 @@ select {
 #sale-products img {
     width: 60%;
     object-fit: cover;
+    cursor: pointer;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -105,6 +105,6 @@ select {
         flex-direction: column;
     }
     #sale-products img {
-        width: 100%;
+        width: 60%;
     }
 }

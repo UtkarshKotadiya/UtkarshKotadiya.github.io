@@ -6,36 +6,41 @@
     --black: rgb(0,0,0);
     --beige: rgb(245,245,220);
     --white: rgb(255,255,255);
+    --text1: #333;
     --background1: #FEFFEA;
+    --main-color-1: #8a6d3b;
+    --menu-back: #6b522d;
     --footer-background: #333;
 }
+
 body {
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #main-home-content {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Main Image */
 #home-page-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
     margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Featured Products */
 #home-page-content h1 {
     font-size: 250%;
-    color: #8a6d3b;
+    color: var(--main-color-1);
     text-align: center;
     margin-bottom: 30px;
 }
@@ -45,18 +50,22 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     justify-items: center;
+    color: var(--text1);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #ft-imgs img {
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 #ft-imgs img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 
@@ -89,7 +98,7 @@ header {
 }
 
 #menu-div {
-    background-color: #8a6d3b;
+    background-color: var(--main-color-1);
     padding: 1%;
 }
 
@@ -107,7 +116,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -116,14 +125,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #6b522d;
+    background-color: var(--menu-back);
     border-radius: 5px;
 }
 
 #menu-toggle {
     cursor: pointer;
     font-size: 24px;
-    color: white;
+    color: var(--white);
     margin-left: 1%;
 }
 .hidden {
@@ -172,13 +181,5 @@ footer {
     }
     #ft-imgs {
         justify-content: center;
-    }
-    #top-section section {
-        padding: 2%;
-        text-align: center;
-    }
-    .filter-container {
-        display: flex;
-        flex-direction: column;
     }
 }

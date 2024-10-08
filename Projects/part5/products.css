@@ -1,25 +1,31 @@
 /* Products Page CSS, Utkarsh Kotadiya */
 
+:root {
+    --white: #fff;
+    --text1: #8a6d3b;
+    --text2: #333;
+}
+
 #main-prod-content {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #main-prod-content h1 {
     font-size: 250%;
-    color: #8a6d3b;
+    color: var(--text1);
     text-align: center;
     margin-bottom: 40px;
 }
 
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-items: center;
     margin-bottom: 50px;
@@ -30,7 +36,6 @@ section {
     padding: 2%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 section:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -44,25 +49,32 @@ section img {
 section img:hover {
     cursor: pointer;
 }
+
 #ring-products img {
-    width: 70%;
+    width: 80%;
     height: 200px;
     object-fit: cover;
 }
 #necklace-products img {
-    width: 70%;
+    width: 80%;
     height: 300px;
     object-fit: cover;
 }
+#bracelet-products img {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;    
+}
 #watch-products img {
     width: 80%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
 }
 
 h5 {
-    color: #333;
+    color: var(--text2);
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    cursor: pointer;
 }
