@@ -112,3 +112,4 @@ const showProducts = async () => {
 };
 
 showProducts();
+
