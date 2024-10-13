@@ -28,7 +28,7 @@ const showProducts = async () => {
         document.getElementById("ring-products").append(section);
 
         const img = document.createElement("img");
-        img.src = "proj_imgs/products/" + item.img_name;
+        img.src = item.img_name;
         section.appendChild(img);
 
         const description = document.createElement("h5");
@@ -50,7 +50,7 @@ const showProducts = async () => {
         document.getElementById("necklace-products").append(section);
 
         const img = document.createElement("img");
-        img.src = "proj_imgs/products/" + item.img_name;
+        img.src = item.img_name;
         section.appendChild(img);
 
         const description = document.createElement("h5");
@@ -72,7 +72,7 @@ const showProducts = async () => {
         document.getElementById("bracelet-products").append(section);
 
         const img = document.createElement("img");
-        img.src = "proj_imgs/products/" + item.img_name;
+        img.src = item.img_name;
         section.appendChild(img);
 
         const description = document.createElement("h5");
@@ -94,7 +94,7 @@ const showProducts = async () => {
         document.getElementById("watch-products").append(section);
 
         const img = document.createElement("img");
-        img.src = "proj_imgs/products/" + item.img_name;
+        img.src = item.img_name;
         section.appendChild(img);
 
         const description = document.createElement("h5");
