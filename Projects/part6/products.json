@@ -1,0 +1,86 @@
+{
+    "rings": [
+        {
+            "_id": 1,
+            "category": "Rings",
+            "img_name": "r1.jpg",
+            "description": "(Diamonds, White Gold)",
+            "details": ["Size: 6", "Material: 18k White Gold", "Carats: 0.5"],
+            "price": 1200,
+            "brand": "Paramount Jewelers"
+        },
+        {
+            "_id": 2,
+            "category": "Rings",
+            "img_name": "r2.jpg",
+            "description": "(Diamonds, White Gold)",
+            "details": ["Size: 7", "Material: 18k White Gold", "Carats: 0.75"],
+            "price": 1500,
+            "brand": "Paramount Jewelers"
+        }
+    ],
+
+    "necklaces": [
+        {
+            "_id": 3,
+            "category": "Necklaces",
+            "img_name": "chain-rope.jpg",
+            "description": "Rope Necklace (Gold)",
+            "details": ["Length: 20 inches", "Material: 18k Gold", "Weight: 15g"],
+            "price": 800,
+            "brand": "Paramount Jewelers"
+        },
+        {
+            "_id": 4,
+            "category": "Necklaces",
+            "img_name": "chain-cuban1.jpg",
+            "description": "Cuban Link Necklace, Thick (Gold)",
+            "details": ["Length: 24 inches", "Material: 18k Gold", "Weight: 50g"],
+            "price": 2000,
+            "brand": "Paramount Jewelers"
+        }
+    ],
+
+    "bracelets": [
+        {
+            "_id": 5,
+            "category": "Bracelets",
+            "img_name": "bracelet1.jpg",
+            "description": "Cuban Link Bracelet (Gold, Diamonds)",
+            "details": ["Length: 7 inches", "Material: 18k Gold", "Carats: 0.4"],
+            "price": 900,
+            "brand": "Paramount Jewelers"
+        },
+        {
+            "_id": 6,
+            "category": "Bracelets",
+            "img_name": "bracelet2.jpg",
+            "description": "Butterfly Bracelet (Gold, Diamonds)",
+            "details": ["Length: 6.5 inches", "Material: 18k Gold", "Carats: 0.3"],
+            "price": 950,
+            "brand": "Paramount Jewelers"
+        }
+    ],
+
+    "watches": [
+        {
+            "_id": 7,
+            "category": "Watches",
+            "img_name": "daydate1.jpg",
+            "description": "Rolex: Daydate (Gold)",
+            "details": ["Model: Daydate", "Material: 18k Gold", "Water Resistance: 100m"],
+            "price": 12000,
+            "brand": "Rolex"
+        },
+        {
+            "_id": 8,
+            "category": "Watches",
+            "img_name": "datejust.jpg",
+            "description": "Rolex: Datejust (Black, Rose Gold, Diamonds)",
+            "details": ["Model: Datejust", "Material: Rose Gold", "Carats: 0.5"],
+            "price": 15000,
+            "brand": "Rolex"
+        }
+    ]
+
+}
