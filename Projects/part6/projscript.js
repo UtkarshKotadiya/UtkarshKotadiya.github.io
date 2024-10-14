@@ -9,6 +9,8 @@ window.onload = () => {
     document.getElementById("menu-toggle").onclick = toggleNav;
 };
 
+
+
 // JSON Parsing
 
 const getProducts = async() => {
@@ -22,7 +24,6 @@ const getProducts = async() => {
 const showProducts = async () => {
     const products = await getProducts();
 
-    // Rings
     products.rings.forEach((item) => {
         const section = document.createElement("section");
         document.getElementById("ring-products").append(section);
@@ -44,7 +45,6 @@ const showProducts = async () => {
         section.appendChild(details);
     });
 
-    // Necklaces
     products.necklaces.forEach((item) => {
         const section = document.createElement("section");
         document.getElementById("necklace-products").append(section);
@@ -66,7 +66,6 @@ const showProducts = async () => {
         section.appendChild(details);
     });
 
-    // Bracelets
     products.bracelets.forEach((item) => {
         const section = document.createElement("section");
         document.getElementById("bracelet-products").append(section);
@@ -88,7 +87,6 @@ const showProducts = async () => {
         section.appendChild(details);
     });
 
-    // Watches
     products.watches.forEach((item) => {
         const section = document.createElement("section");
         document.getElementById("watch-products").append(section);
@@ -112,4 +110,3 @@ const showProducts = async () => {
 };
 
 showProducts();
-
