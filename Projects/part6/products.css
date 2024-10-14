@@ -50,7 +50,7 @@ section img:hover {
     cursor: pointer;
 }
 
-#ring-products,#necklace-products,#bracelet-products,#watch-products img {
+#ring-products img,#necklace-products img,#bracelet-products img,#watch-products img {
     width: 60%;
     height: 200px;
     object-fit: cover;
