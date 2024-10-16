@@ -1,0 +1,161 @@
+/* About Page CSS, Utkarsh Kotadiya */
+
+:root {
+    --main-text: #8a6d3b;
+    --text-color1: #333;
+    --white: rgb(255,255,255);
+    --background1: #7a5b29;
+}
+
+
+#au-main-content {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#au-hist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5%;
+    gap: 20px;
+}
+
+#au-top-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+#au-top-text {
+    flex: 1;
+    text-align: center;
+}
+
+#au-top-text h2 {
+    font-size: 200%;
+    color: var(--main-text);
+    margin-bottom: 15px;
+}
+
+#au-top-text p {
+    line-height: 2;
+    font-size: 100%;
+}
+
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: var(--main-text);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: var(--background1);
+}
+
+
+
+#au-ppl-div {
+    margin: 20px;
+}
+
+#au-ppl-div h1 {
+    font-size: 300%;
+    text-align: center;
+    color: var(--main-text);
+    margin-bottom: 1%;
+}
+
+#au-ppl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 2% auto;
+    max-width: 1000px;
+}
+
+#au-ppl section {
+    text-align: center;
+}
+
+.jeweler-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jeweler-info img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.bio {
+    text-align: left;
+    max-width: 600px;
+}
+
+.bio h3 {
+    font-size: 150%;
+    color: var(--text-color1);
+    margin-bottom: 10px;
+}
+
+.bio p {
+    font-size: 100%;
+    line-height: 1.6;
+    color: var(--text-color1);
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width:600px) {
+    #au-hist {
+        margin: 1%;
+        flex-direction: row;
+        align-items:center;
+    }
+    #au-top-img {
+        padding: 1%;
+    }
+    #au-top-img img {
+        max-width: 700px;
+        object-fit: cover;
+
+    }
+    #au-top-text {
+        padding: 2%;
+    }
+    .jeweler-info {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .jeweler-info img {
+        width: 40%;
+        max-width: 200px;
+    }
+    .bio {
+        width: 60%;
+    }
+}
