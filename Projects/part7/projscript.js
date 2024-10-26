@@ -11,7 +11,7 @@ window.onload = () => {
 
 
 
-// JSON Parsing
+// JSON Parsing, products page
 
 const getProducts = async() => {
     try {
@@ -113,57 +113,49 @@ showProducts();
 
 
 
+// Contact form functions
 
+const sendEmail = async (json) => {
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: json
+        });
+        return response;
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+};
 
+document.getElementById("contact-form").onsubmit = async (e) => {
+    e.preventDefault();
 
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contact-form");
+    const form = e.target;
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
     const formMessages = document.getElementById("form-messages");
 
-    form.addEventListener("submit", async function (e) {
-        e.preventDefault(); // Prevent default form submission
+    formMessages.textContent = "Sending...";
+    formMessages.classList.remove("success", "error", "hidden");
 
-        // Collect form data
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
+    const response = await sendEmail(json);
 
-        try {
-            // Example POST request using fetch to your email handling endpoint
-            const response = await fetch("https://api.web3forms.com/submit", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
-            });
+    if (response && response.status === 200) {
+        formMessages.textContent = "Thank you for reaching out! We will get back to you soon.";
+        formMessages.classList.add("success");
+        formMessages.classList.remove("error");
+        form.reset();
+    } else {
+        formMessages.textContent = "There was a problem sending your message. Please try again.";
+        formMessages.classList.add("error");
+        formMessages.classList.remove("success");
+    }
 
-            if (response.ok) {
-                // Show success message
-                formMessages.textContent = "Your message has been sent successfully!";
-                formMessages.classList.remove("error");
-                formMessages.classList.add("success");
-                formMessages.classList.remove("hidden");
-                form.reset(); // Clear the form
-            } else {
-                // Show error message
-                throw new Error("Failed to send message.");
-            }
-        } catch (error) {
-            formMessages.textContent = "There was a problem sending your message. Please try again.";
-            formMessages.classList.remove("success");
-            formMessages.classList.add("error");
-            formMessages.classList.remove("hidden");
-        }
-    });
-});
+    formMessages.classList.remove("hidden");
+};
